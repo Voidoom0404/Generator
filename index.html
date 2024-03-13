@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-6 offset-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="m-0">Окно результатов генерации</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="card-title"><span id="surNameOutput"> </span> <span id="firstNameOutput"> </span>  <span id="patronymicOutput"> </span></h2>
+                            <p><b>Пол:</b> <span id="genderOutput"></span></p>
+                            <p><b>Дата рождения:</b> <span id="birthYearOutput"></span></p>
+                            <p><b>Профессия: </b> <span id="professionOutput"></span></p>
+                            <button id="refresh">Сгенерировать</button>
+                            <button id="clear">Очистить</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/personGenerator.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
